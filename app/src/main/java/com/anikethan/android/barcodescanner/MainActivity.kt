@@ -145,6 +145,8 @@ class MainActivity : AppCompatActivity() {
 
         var authorities: String = applicationContext.packageName + ".fileprovider"
 
+
+
         imageUri = if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.LOLLIPOP) {
             Uri.fromFile(imageFile)
         } else {
